@@ -13,8 +13,7 @@ RUN mkdir -p /usr/src/app \
   && cd /usr/local/heroku \
   && wget -qO- "https://s3.amazonaws.com/assets.heroku.com/heroku-client/heroku-client.tgz" | tar xz \
   && mv heroku-client/* . \
-  && rmdir heroku-client \
-  && chmod 0600 $HOME/.netrc
+  && rmdir heroku-client
 
 WORKDIR /usr/src/app
 
